@@ -1,0 +1,25 @@
+﻿@page
+@using Microsoft.AspNetCore.Builder
+@using Microsoft.Extensions.Options
+@using System.Globalization
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+
+}
+
+<h2>
+    @ViewData["Title"] @Localizer.Text("Hello")
+
+</h2>
+<p>@Localizer.Text("Current culture") : @CultureInfo.CurrentCulture.DisplayName (@CultureInfo.CurrentCulture.NativeName)</p>
+
+<p>@Localizer.Text("Current date") : @DateTime.Now</p>
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+@section Scripts{
+    <partial name="_ValidationScriptsPartial" />
+}
