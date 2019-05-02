@@ -13,7 +13,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Localization;
-
+// Ref : https://github.com/LazZiya/MyTrips
 namespace AspnetCoreLocalization
 {
     public class Startup
